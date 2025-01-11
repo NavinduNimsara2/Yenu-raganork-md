@@ -22,15 +22,15 @@ const settingsMenu = [
   ]
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
-if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
+if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("Raganork~85582df9e62845dcb4b2f8ea36c02c20:4275534753424e4b6963513d")
 module.exports = {
     VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
-    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
+    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
     MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
-    ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
+    ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || true,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(edit AUTOMUTE_MSG)_',
     ANTIWORD_WARN: process.env.ANTIWORD_WARN || '',
@@ -41,14 +41,14 @@ module.exports = {
     ANTI_BOT: process.env.ANTI_BOT || '',
     ANTISPAM_COUNT: process.env.ANTISPAM_COUNT || '6/10', // msgs/sec
     AUTOUNMUTE_MSG: process.env.AUTOUNMUTE_MSG || '_Group auto unmuted!_\n_(edit AUTOUNMUTE_MSG)_',
-    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || false,
+    AUTO_READ_STATUS: convertToBool(process.env.AUTO_READ_STATUS) || true,
     READ_MESSAGES: convertToBool(process.env.READ_MESSAGES) || false,
     PMB_VAR: convertToBool(process.env.PMB_VAR) || false,
     DIS_PM: convertToBool(process.env.DIS_PM) || false,
     REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || false,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
-    SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || '',
+    SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || 'Raganork~85582df9e62845dcb4b2f8ea36c02c20:4275534753424e4b6963513d',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
     BOT_INFO: process.env.BOT_INFO || 'Raganork;Skl11;0;https://i.imgur.com/P7ziVhr.jpeg;https://chat.whatsapp.com/Dt3C4wrQmt0GG6io1IBIHb',
@@ -57,8 +57,8 @@ module.exports = {
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "Raganork",
-    BOT_NAME: process.env.BOT_NAME || 'Raganork',
+    STICKER_DATA: process.env.STICKER_DATA || "Naviya sticker",
+    BOT_NAME: process.env.BOT_NAME || 'Nimsara Bot',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝑺𝜣𝑼𝑹𝛢𝑽𝑲𝑳¹¹ꫂ;Raganork MD bot;https://i.imgur.com/P7ziVhr.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'private',
